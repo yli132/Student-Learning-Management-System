@@ -50,19 +50,13 @@
 ## 编译&运行
 
 1. **编译主程序**
-    g++ main.cpp modules\DataImporter.cpp modules\StudentManagementSystem.cpp modules\Student.cpp modules\Course.cpp modules\Score.cpp modules\User.cpp modules\Validator.cpp modules\Logger.cpp modules\Auth.cpp modules\Permission.cpp -o stu_sys -std=c++11 -pthread
+   g++ main.cpp modules/Student.cpp modules/Course.cpp modules/Score.cpp modules/StudentManagementSystem.cpp modules/Validator.cpp modules/Logger.cpp modules/Auth.cpp modules/Permission.cpp modules/User.cpp -o stu_sys.exe -std=c++11 -pthread
 
     - 若只需部分功能或测试，按需调整编译文件列表。
 
 2. **运行主程序**
     ```sh
     ./stu_sys。exe
-    ```
-
-3. **运行模块测试**
-    ```sh
-    g++ modules/TestStudent.cpp modules/Student.cpp -o test_student && ./test_student
-    # 其他模块同理，详见 modules/README.md
     ```
 
 ---
